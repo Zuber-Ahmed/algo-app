@@ -9,7 +9,7 @@ export const Test=()=>{
 
     const handelOnBoard=()=>{
         setPdata([...pdata, pname])
-        console.log(setPName)
+        // console.log(setPName)
     }
     const handelOffBoard=()=>{
         const filtered=pdata.filter((item)=> item!==pname);
@@ -31,7 +31,6 @@ export const Test=()=>{
                     <Button variant="contained" sx={{marginLeft:2}} onClick={handelOffBoard}>ON Boarding</Button>
                 </Grid>
             </Grid>
-            <h3>Testing</h3>
             <Grid container spacing={2}>
             {pdata.map((item)=>
             <Grid item xs={3} className="result" sx={{margin:2}}>

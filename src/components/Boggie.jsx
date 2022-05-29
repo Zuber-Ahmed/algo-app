@@ -24,22 +24,21 @@ export const Boggie = () => {
         </Grid>
         <Grid item xs={4}>
           <Button variant="contained" onClick={handelOnBoard}>
-            ON Board{" "}
+            ON Board
           </Button>
         </Grid>
         <Grid item xs={4}>
           <Button variant="contained" onClick={handelOffBoarding}>
-            OFF Board{" "}
+            OFF Board
           </Button>
         </Grid>
       </Grid>
-      <h1>My Boggie</h1>
-      <Grid container spacing={2}>
+      <h1>Welcome</h1>
+      <Grid container spacing={1}>
         {passData.map((item) => (
-          <Grid item xs={4}>
-            <Grid item spacing={2}>
+          <Grid item>
+              {/* {alert("Confirm boarding"+item)} */}
               {item}
-            </Grid>
           </Grid>
         ))}
       </Grid>

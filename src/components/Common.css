@@ -13,13 +13,14 @@
     margin: 10px;
 }
 .sub2{
-    margin: 10px;
-    background-color: rgb(169, 145, 7);
+    margin: 5px;
+    background-color: rgb(186, 184, 175);
     /* color: white; */
     padding: 50px;
     font-weight: bold;
     font-size: large;
 }
+
 .test{
     background-color: aqua;
 }
@@ -27,4 +28,8 @@
     border: 1px solid black;
     font-weight: bold;
     font-size: 22px;
+}
+.sub3{
+    background-color: rgb(120, 120, 120);
+    color: white;
 }

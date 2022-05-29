@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Grid, TextField } from "@mui/material";
-import { fontWeight, style } from "@mui/system";
 
 export const TilesBox=()=>{
     const[widthOfHall,setWidthOfHall]=useState(0)
