@@ -14,7 +14,17 @@
 }
 .sub2{
     margin: 10px;
-    background-color: rgb(193, 136, 136);
-    color: white;
+    background-color: rgb(169, 145, 7);
+    /* color: white; */
     padding: 50px;
+    font-weight: bold;
+    font-size: large;
+}
+.test{
+    background-color: aqua;
+}
+.result{
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 22px;
 }
