@@ -8,9 +8,10 @@ import { Area } from "./Area";
 import { Mileag } from "./Mileage";
 import { TilesBox } from "./TilesBox";
 import { Boggie } from "./Boggie";
+import { FruiteBasket } from "./FruiteBasket";
 
 export const ContainerManager = () => {
-  const [val, setVal] = useState("Boggie");
+  const [val, setVal] = useState("FruiteBasket");
 
   return (
     <div>
@@ -23,6 +24,7 @@ export const ContainerManager = () => {
         <Tab value="Travel Cost" label="Travel Cost" />
         <Tab value="Tilesbox" label="Tiles of Box" />
         <Tab value="Boggie" label="Boggie Section" />
+        <Tab value="FruiteBasket" label="Fruite Basket" />
       </Tabs>
       {val === "add" && <Sum/>}
       {val === "mul" && <Multi/>}
@@ -32,6 +34,7 @@ export const ContainerManager = () => {
       {val === "Travel Cost" && <Mileag/>}
       {val === "Tilesbox" && <TilesBox/>}
       {val === "Boggie" && <Boggie/>}
+      {val === "FruiteBasket" && <FruiteBasket/>}
     </div>
   );
 };
