@@ -6,6 +6,7 @@ import {
   Card,
   CardContent,
   Alert,
+  Tooltip
 } from "@mui/material";
 
 export const FruiteBasket = () => {
@@ -20,7 +21,7 @@ export const FruiteBasket = () => {
       if(fName===""){
         setIsBlank(true)
       }else 
-      if (fData.length < 7) {
+      if (fData.length < 3) {
             setFdata([...fData, fName]);
             setFname('')
             setIsBlank(false)
@@ -41,12 +42,17 @@ export const FruiteBasket = () => {
     <div>
       <Grid container>
         <Grid item xs={4}>
+            <Tooltip title="Welcome" placement="top-start">
           <TextField
             variant="filled"
             label="Fruite Name"
             value={fName}
-            onChange={(e) => setFname(e.target.value)}
-          ></TextField>
+            onChange={(e) => setFname(e.target.value)
+            }
+          >
+              </TextField>
+              </Tooltip>
+
         </Grid>
         <Grid item xs={3}>
           <Button variant="contained" onClick={handelAddFruite}>
