@@ -6,6 +6,9 @@ import { Counter } from './components/useEffect';
 import { Hotels } from './components/Hotels';
 import { TodoList } from './components/TodoList';
 import { Mobiles } from './components/Mobiles';
+import { JsonData } from './components/JSON/JsonData';
+import { DynamicAPI } from './components/JSON/DynamicAPI';
+import { Table1 } from './TableAPI/Table1';
 
 
 
@@ -17,8 +20,11 @@ const App=()=> {
       {/* <Counter/> */}
       {/* <Hotels/> */}
       {/* <TodoList/> */}
-      <TodoList/>
+      {/* <TodoList/> */}
       {/* <Mobiles/> */}
+      {/* <JsonData/> */}
+      {/* <DynamicAPI/> */}
+      <Table1/>
     </div>
   );
 }

@@ -37,7 +37,7 @@
 .items{
     background-color: rgb(43, 57, 61);
     border: 1px solid black;
-    height: 500px;
+    height: 200px;
     width: 300px;
     float: left;
     margin: 5px;
@@ -57,4 +57,29 @@
     height: 200px;
     width: 200px;
     margin-left: 40px;
+}
+.data{
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid black;
+    height: 300px;
+    width: 300px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    float: left;
+}
+
+table,th,td{
+    border: 2px solid black;
+}
+table{
+    margin-left: 270px;
+    border-collapse: collapse;
+}
+th{
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-color: black;
 }
