@@ -1,5 +1,6 @@
+//Author Zuber Ahmed
 import React,{useState,useEffect} from "react";
-import axios from "axios";
+import axios from "axios";              //dependency library for get the data from API
 
 export const Table1=()=>{
     const[data,setdata]=useState([]);
@@ -10,7 +11,7 @@ export const Table1=()=>{
 
     const getdata=async()=>{
             let tabledata=await axios.get("https://www.ag-grid.com/example-assets/olympic-winners.json")
-            // console.log(tabledata.data)
+            //check your data here console.log(tabledata.data)
             setdata(tabledata.data)
             setcopydata(tabledata.data)
             
@@ -33,7 +34,7 @@ export const Table1=()=>{
        }
 
    },[selected])
-   console.log(selected)
+   //console.log(selected)
 
 
    useEffect(()=>{
@@ -80,7 +81,7 @@ export const Table1=()=>{
                                 <td>{item.silver}</td>
                                 <td>{item.total}</td>
                                 <td>{item.year}</td>
-                                <button onClick={handleDelete(item)}>Delete</button>
+                                <button onClick={()=>handleDelete(item)}>Delete</button>
                                 </tr>    
                 )
             })}

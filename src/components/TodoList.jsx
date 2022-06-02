@@ -27,6 +27,9 @@ export const TodoList = () => {
     let search = copynewdata.filter((item) => item.includes(find));
     setnewdata(search);
   }, [find]);
+
+
+  
   return (
     <div>
       <input

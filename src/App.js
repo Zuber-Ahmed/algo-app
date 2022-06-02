@@ -9,6 +9,8 @@ import { Mobiles } from './components/Mobiles';
 import { JsonData } from './components/JSON/JsonData';
 import { DynamicAPI } from './components/JSON/DynamicAPI';
 import { Table1 } from './TableAPI/Table1';
+import { NationalData } from './NationalJSON/NationalData';
+
 
 
 
@@ -24,7 +26,8 @@ const App=()=> {
       {/* <Mobiles/> */}
       {/* <JsonData/> */}
       {/* <DynamicAPI/> */}
-      <Table1/>
+      {/* <Table1/> */}
+      <NationalData/>
     </div>
   );
 }
