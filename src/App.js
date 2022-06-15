@@ -4,7 +4,7 @@ import { Home } from "./components/Home";
 import "./components/Common.css";
 import { Counter } from './components/useEffect';
 import { Hotels } from './components/Hotels';
-import { TodoList } from './components/TodoList';
+import { TodoList } from './Practice'
 import { Mobiles } from './components/Mobiles';
 import { JsonData } from './components/JSON/JsonData';
 import { DynamicAPI } from './components/JSON/DynamicAPI';
@@ -16,7 +16,7 @@ import { NationalData } from './NationalJSON/NationalData';
 
 const App=()=> {
   return (
-    <div className="main">
+    <div>
       {/* <Home/> */}
       {/* <Test/> */}
       {/* <Counter/> */}
@@ -27,7 +27,8 @@ const App=()=> {
       {/* <JsonData/> */}
       {/* <DynamicAPI/> */}
       {/* <Table1/> */}
-      <NationalData/>
+      {/* <NationalData/> */}
+      <TodoList/>
     </div>
   );
 }
